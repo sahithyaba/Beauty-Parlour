@@ -13,7 +13,7 @@ const Course = new Schema({
     },
 
     Duration : {
-        type: number,
+        type: Number,
         required: [true,"Course Duration is Avialable"],
     },
     Decription : {
@@ -25,13 +25,13 @@ const Course = new Schema({
         required : [true, 'Course Booked date is needed'],
     },
     start_date: {
-        type:number,
+        type:Number,
     },
     End_Date: {
-        type:number,
+        type:Number,
     },
     customer_Id : {
-        type:number,
+        type:Number,
         required:[true,"Customer Id is required for enrollment in courses"],
     }
 })
