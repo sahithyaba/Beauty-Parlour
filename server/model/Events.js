@@ -20,15 +20,15 @@ const Events = new Schema({
         required : [true, "Event Description is avialable for Particular course"],     
     },
     Date_of_event : {
-        type: Number,
+        type: Date,
         required : [true, 'Event Date is needed'],
     },
     Booked_date : {
-        type: Number,
+        type: Date,
         required : [true, 'Event Booked Date is nescessary for Intimation'],
     },
     customer_Id : {
-        type:number,
+        type: mongoose.SchemaTypes.ObjectId,
         required:[true,"Customer Id is required for Booking an Event"],
     }
 })
