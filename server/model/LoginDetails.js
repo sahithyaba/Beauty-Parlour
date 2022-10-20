@@ -15,7 +15,7 @@ const LoginSchema = new Schema({
     password : {
         type : String,
         required : [true, 'Password cannot be empty'],
-        match : [/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&-])[A-Za-z\d@$!%*?&-]{8,}$/, "Enter a valid Password"],
+        //match : [/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&-])[A-Za-z\d@$!%*?&-]{8,}$/, "Enter a valid Password"],
     },
 
     account_type: {

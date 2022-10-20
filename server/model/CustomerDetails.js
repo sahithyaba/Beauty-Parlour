@@ -30,11 +30,9 @@ const CustomerDetailsSchema = new Schema({
     Booked_Items:{
         Booked_Courses/*other names given in Taskade Events and Services Id*/: [{
             type: Number,
-            required: [true, "Number of Courses or Events booked is Required"],
         }],
         Timing:{
             type:Number,
-            required:[true,"Timing for Particular Event or Booked Events or Courses is required"],
         }
     } 
 })
